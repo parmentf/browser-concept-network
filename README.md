@@ -44,6 +44,7 @@ is available, and you want to update version 0.1.0 to 0.1.1, use these steps:
 npm update concept-network
 make version v=0.1.1
 make index.html
+git commit -a
 make publish
 ```
 For publishing the page on github, use:
@@ -54,6 +55,7 @@ git push
 ```
 
 ## Release History
+* 2013/01/13: 0.1.0: Initial release
 
 ## License
 Copyright (c) 2013 François Parmentier <francois.parmentier@gmail.com>
