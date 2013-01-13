@@ -13,6 +13,7 @@ version: jshint minify
 publish:
 	@./tools/tag-release.sh
 
+# call it after make version v=2.0.5
 index.html: README.md html/top.html html/bottom.html
 	@./node_modules/.bin/marked --gfm README.md > content.html
 	@cat html/top.html content.html html/bottom.html > index.html
