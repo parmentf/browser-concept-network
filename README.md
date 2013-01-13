@@ -29,8 +29,14 @@ Take a look at ``concept-network.js``, and adapt it to your web application.
 
 The important part is:
 ```javascript
-var ConceptNetwork = require('concept-network');
+var ConceptNetwork = require('concept-network').ConceptNetwork;
 cn = new ConceptNetwork();
+```
+
+Warning: until it is fixed, you have to write instead:
+```javascript
+var ConceptNetwork = require('/home/francois/dev/browser-concept-network/lib/concept-network').ConceptNetwork;
+  cn = new ConceptNetwork();
 ```
 
 ## Demonstration
