@@ -4,6 +4,8 @@ The browserified ([browserify](https://github.com/substack/node-browserify/)) ve
 
 Concept Network is a weighted directed graph, in which activation values are propagated. Written in [Node.js](http://nodejs.org).
 
+browser-concept-network allows its use within a web browser.
+
 ## Installation
 
 ### Get the files
