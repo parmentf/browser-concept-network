@@ -31,4 +31,8 @@ $(document).ready(function() {
   }
   
   $('div.container:nth-of-type(2)').prepend(content);
+
+  // Buttonize some links
+  $('h2#Demonstration+p a').addClass('btn btn-primary');
+  $('h2#Demonstration+p+p a').addClass('btn');
 });

@@ -12,7 +12,7 @@ $(document).ready(function() {
     save.remove();
   }
   else {
-    // save.hide();
+    save.hide();
     if (typeof localStorage.ector === 'undefined') {
       load.hide();
     }
