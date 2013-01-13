@@ -25,4 +25,4 @@ js/bundle-concept-network.js: ./node_modules/concept-network/lib/concept-network
 minify: js/bundle-concept-network.js
 	@cat js/bundle-concept-network.js | ./node_modules/.bin/uglifyjs -c 2> /dev/null > js/bundle-concept-network.min.js
 
-.PHONY: jshint version
+.PHONY: jshint publish
