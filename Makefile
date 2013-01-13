@@ -14,7 +14,7 @@ publish:
 	@./tools/tag-release.sh
 
 index.html: README.md html/top.html html/bottom.html
-	@./node_modules/.bin/markded --gfm README.md > content.html
+	@./node_modules/.bin/marked --gfm README.md > content.html
 	@cat html/top.html content.html html/bottom.html > index.html
 	@rm content.html
 
