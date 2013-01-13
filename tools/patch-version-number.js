@@ -24,8 +24,10 @@ if (/^[0-9]\.[0-9]+\.[0-9]+$/.test(version)) {
   c = fs.readFileSync('README.md', 'utf8');
   c = c.replace(/Release History\n/,
     "Release History\n" +
-    "* " + d.getFullYear() + "/" + (d.getMonth()+1).pad(2) + (d.getDate()).pad(2) +
-    ": " + version);
+    "* " + d.getFullYear() + "/" +
+    (d.getMonth()+1).pad(2) + "/" +
+    (d.getDate()).pad(2) +
+    ": version " + version);
   fs.writeFileSync('README.md', c, 'utf8');
   
 } else {
