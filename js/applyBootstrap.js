@@ -3,12 +3,12 @@ $(document).ready(function() {
   $('h2').each(function (index, header) {
     // console.log(index, header.innerText);
     $('h2:nth-of-type('+ Number(index+1) +')')
-      .attr('id', 
+      .attr('id',
         header.innerText.replace(' ','')
       );
   });
 
-  // Lead to the first paragraphs
+  // hero-unit to the first paragraphs
   var globalSel = 'h1, h1+p';
   var sel = 'h1+p';
   var p = $(sel);
