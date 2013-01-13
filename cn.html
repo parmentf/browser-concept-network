@@ -53,7 +53,7 @@
               </ul>
             </li>
             <li><a href="https://github.com/parmentf/browser-concept-network/">GitHub Project</a></li>
-            <li><a href="cn.html" class="active">Demonstration</a></li>
+            <li class="active"><a href="cn.html">Demonstration</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -70,8 +70,23 @@
 
       </p>
     </div>
+    <div id="alerts">
+      <div class="alert alert-{{type}}">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>{{type}}!</strong> {{message}}.
+      </div>
+    </div>
+    <div id="infos">
+      <p>Number of nodes: {{nodes_number}}</p>
+      <p>Number of links: {{links_number}}</p>
+      <ul>
+      {{#nodes}}
+      <li>{{id}} → {{label}} ({{occ}})</li>
+      {{/nodes}}
+      </ul>
+    </div>
     <p><button class="btn" id="save" title="Save ECTOR in your browser">Save</button></p>
-    <p><button class="btn" id="load" title="Load ECTOR from your browser">Load</button></p>    
+    <p><button class="btn" id="load" title="Load ECTOR from your browser">Load</button></p>
   </div>
 </body>
 </html>
