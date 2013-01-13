@@ -55,7 +55,7 @@ git push
 ```
 
 ## Release History
-* 2013/01/13: 0.1.0: Initial release
+* 2013/01/13: version 0.1.0: Initial release
 
 ## License
 Copyright (c) 2013 François Parmentier <francois.parmentier@gmail.com>

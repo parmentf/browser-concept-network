@@ -27,7 +27,8 @@ if (/^[0-9]\.[0-9]+\.[0-9]+$/.test(version)) {
     "* " + d.getFullYear() + "/" +
     (d.getMonth()+1).pad(2) + "/" +
     (d.getDate()).pad(2) +
-    ": version " + version);
+    ": version " + version +
+    "\n");
   fs.writeFileSync('README.md', c, 'utf8');
   
 } else {
