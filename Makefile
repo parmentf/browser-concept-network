@@ -1,5 +1,5 @@
 APP_DIR = $(shell pwd)
-JS_FILES = $(wildcard $(APP_DIR)/js/(^bundle)*.js) $(wildcard $(APP_DIR)/tools/*.js)
+JS_FILES = $(APP_DIR)/js/applyBootstrap.js $(APP_DIR)/js/concept-network.js $(wildcard $(APP_DIR)/tools/*.js)
 JSON_FILES = $(wildcard $(APP_DIR)/config/*.json) $(wildcard $(APP_DIR)/*.json)
 
 
