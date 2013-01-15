@@ -4,7 +4,7 @@ $(document).ready(function() {
     // console.log(index, header.innerText);
     $('h2:nth-of-type('+ Number(index+1) +')')
       .attr('id',
-        header.innerText.replace(' ','')
+        header.firstChild.data.replace(' ','')
       );
   });
 
