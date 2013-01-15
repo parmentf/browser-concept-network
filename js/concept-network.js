@@ -35,6 +35,9 @@ $(document).ready(function() {
 
   var infoTpl = $('#infos').html();
   $('#infos').html('');
+  /**
+   * Display information on the Concept Network (cn)
+   **/
   var showInfos = function() {
     var status = {
       nodes_number: cn.nodeLastId,
