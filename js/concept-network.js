@@ -47,10 +47,26 @@ $(document).ready(function() {
     //   {id: 1, label: "sSalut, comment ça va?", occ: 1}
     // ];
     status.nodes = [];
-    for(var i in cn.node) {
-      status.nodes.push(cn.node[i]);
-    }
+    // for(var i in cn.node) {
+    //   status.nodes.push(cn.node[i]);
+    // }
     $('#infos').append(Mustache.render(infoTpl, status));
+
+    // Create data table for DataTable
+    aaData = [];
+    var aoColumns = [
+      {"sTitle": "id", "sClass": "right", "sType": "numeric"},
+      {"sTitle": "label", "sWidth": "80%"},
+      {"sTitle": "occurrence", "sClass": "right", "sType": "numeric", "sWidth": "10%"}
+    ];
+    for(var i in cn.node) {
+      var node = cn.node[i];
+      var a = [node.id, node.label, node.occ];
+      aaData.push(a);
+    }
+    // Display DataTable
+    $('#infos').append('<table cellpadding="0" cellspacing="0" border="0" class="display" id="cntable"></table>');
+    $('#cntable').DataTable({"aaData": aaData, "aoColumns": aoColumns, "sPaginationType": "full_numbers"});
   };
 
   load.on('click', function () {
