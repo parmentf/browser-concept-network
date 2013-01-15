@@ -66,6 +66,7 @@ For publishing the page on github, use:
 git checkout gh-pages
 git merge master
 git push
+git checkout master
 ```
 
 ## Release History
