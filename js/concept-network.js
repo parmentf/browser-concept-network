@@ -55,14 +55,21 @@ $(document).ready(function() {
     // Create data table for DataTable
     aaData = [];
     var aoColumns = [
-      {"sTitle": "id", "sClass": "right", "sType": "numeric"},
+      {"sTitle": "id", "sClass": "right", "sType": "numeric", "sWidth": "5%"},
       {"sTitle": "label", "sWidth": "80%"},
       {"sTitle": "occ", "sClass": "right", "sType": "numeric", "sWidth": "5%"},
-      {"sTitle": "type", "sClass": "center","sWidth": "5%"}
+      {"sTitle": "type", "sClass": "center","sWidth": "5%"},
+      {"sTitle": "pos", "sClass": "center", "sWith": "5%"}
     ];
     for(var i in cn.node) {
       var node = cn.node[i];
-      var a = [node.id, node.label, node.occ, node.label[0]];
+      var pos = "b" + (node.beg ? node.beg : 0) +
+                "m" + (node.mid ? node.mid : 0) +
+                "e" + (node.end ? node.end : 0);
+      if (pos === "b0m0e0") {
+        pos = '';
+      }
+      var a = [node.id, node.label, node.occ, node.label[0], pos];
       aaData.push(a);
     }
     // Display DataTable
