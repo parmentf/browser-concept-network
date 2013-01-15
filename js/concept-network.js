@@ -41,7 +41,7 @@ $(document).ready(function() {
   var showInfos = function() {
     var status = {
       nodes_number: cn.nodeLastId,
-      links_number: Object.keys(cn.link).length
+      links_number: Object.size(cn.link)
     };
     // status.nodes = [
     //   {id: 1, label: "sSalut, comment ça va?", occ: 1}
