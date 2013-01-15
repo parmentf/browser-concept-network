@@ -175,6 +175,9 @@ table.display td.center {
 	text-align: center;
 }
 
+table.display td.right {
+	text-align: right;
+}
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
