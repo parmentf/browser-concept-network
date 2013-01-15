@@ -57,11 +57,12 @@ $(document).ready(function() {
     var aoColumns = [
       {"sTitle": "id", "sClass": "right", "sType": "numeric"},
       {"sTitle": "label", "sWidth": "80%"},
-      {"sTitle": "occurrence", "sClass": "right", "sType": "numeric", "sWidth": "10%"}
+      {"sTitle": "occ", "sClass": "right", "sType": "numeric", "sWidth": "5%"},
+      {"sTitle": "type", "sClass": "center","sWidth": "5%"}
     ];
     for(var i in cn.node) {
       var node = cn.node[i];
-      var a = [node.id, node.label, node.occ];
+      var a = [node.id, node.label, node.occ, node.label[0]];
       aaData.push(a);
     }
     // Display DataTable
