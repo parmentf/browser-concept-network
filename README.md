@@ -56,6 +56,7 @@ is available, and you want to update version 0.1.0 to 0.1.1, use these steps:
 ```bash
 npm update concept-network
 make version v=0.1.1
+vi README.md
 make index.html
 git commit -a
 make publish
@@ -68,6 +69,7 @@ git push
 ```
 
 ## Release History
+* 2013/01/15: version 0.1.2: Nodes displayed in a JQuery DataTables
 * 2013/01/13: version 0.1.1: Demonstration initialized
 * 2013/01/13: version 0.1.0: Initial release
 
