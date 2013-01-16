@@ -37,7 +37,7 @@ cn = new ConceptNetwork();
 Warning: until it is fixed, you have to write instead:
 ```javascript
 var ConceptNetwork = require('/home/francois/dev/browser-concept-network/lib/concept-network').ConceptNetwork;
-  cn = new ConceptNetwork();
+cn = new ConceptNetwork();
 ```
 
 ## Demonstration
